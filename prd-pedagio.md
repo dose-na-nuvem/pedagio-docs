@@ -17,7 +17,7 @@ Não é escopo do projeto fazer funcionalidades para a faixa de pedágio "manual
 
 A Central de pedágio faz a detecção de tags RFId nos veículos e deve liberar a cancela da faixa "sem-parar". Essa decisão é feita através de comunicação da central de pedágio com a plataforma, na nuvem.
 
-Para dar qualidade ao usuário da via, pode-se definir como critério de operação que mesmo que haja um falha imediata no pagamento, em algum percentual de fluxo, a cancela seja liberada 
+Para melhorar a experiência do usuário, pode-se definir como critério de operação que, mesmo que haja uma falha imediata no pagamento, em algum ponto do fluxo, a cancela seja liberada.
 
 # 2. Escope e Objetivo
 
