@@ -79,7 +79,7 @@ Disponibilidade, Qualidade e Resiliência de operação:
 
 # 7. Restrições e Premissas
 
-O projeto será desenvolvido contando com a contribuição da comunidade, sendo em contra-partida, mentorada pelo idealizador do projeto: Juraci Paixão.
+O projeto será desenvolvido contando com a contribuição da comunidade, sendo em contra-partida, mentorada pelo idealizador do projeto: [Juraci Paixão](https://www.linkedin.com/in/jpkroehling/).
 
 Não há um orçamento para o projeto e por isso, buscaremos sempre soluções gratuitas e livres de custos recorrentes ou isolados.
 Inicialmente, não há prazos fixos delimitados em vista da característica exploratória do projeto, entretanto, tarefas específicas serão ajustadas para evitar devaneios ou direcionamentos fora do escopo.
