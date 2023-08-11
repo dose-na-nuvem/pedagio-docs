@@ -32,7 +32,7 @@ Enterprise_Boundary(nuvem, "Cloud Provider") {
   Boundary(rede, "Redirect"){
     System(lb,"Load Balancer","Redirect")
     System(waf,"WAF","Firewall")
-    BiRel(lb, waf,)
+    Rel(waf, lb,)
   }
 
 
@@ -44,7 +44,7 @@ Enterprise_Boundary(nuvem, "Cloud Provider") {
     BiRel(pedagio1, db1, "Persistencia de dados")
   }
 
-  BiRel(internet, lb, "Transação","gRPC")
+  BiRel(internet, waf, "Transação","gRPC")
 
   Boundary(region2, "Região 2") {
     System(pedagio2, "Pedagio Backend","Processa pedagio")
