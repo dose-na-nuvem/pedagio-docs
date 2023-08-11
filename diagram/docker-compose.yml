@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plantuml:
+    image: plantuml/plantuml-server
+    container_name: plantuml
+    restart: always
+    ports:
+      - "0.0.0.0:5052:8080"
+    volumes:
+      - .:/app
+    networks:
+      - web
+
+networks:
+  web:

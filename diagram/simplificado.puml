@@ -1,0 +1,15 @@
+@startuml simplificado
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+left to right direction
+
+title "Cobrança automática de Pedágio - Diagrama Simplificado"
+
+System(b0, "Central de Pedágio", "Veículo")
+System(b1, "Internet") #Red
+System(b2, "Cloud Provider", "Microservice")
+
+b0 <...> b1 : "Conexão"
+b1 <...> b2 : "Conexão"
+
+@enduml
