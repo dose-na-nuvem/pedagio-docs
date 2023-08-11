@@ -10,7 +10,7 @@ A platforma de pedágio automático é como um filhote de baleia, pois já nasce
 
 O pedário é nativamente multi-localizado, já que funcionará em várias centrais de pedágio em regiões diversas.
 
-Para ter sucesso no mercado, a empresa de Pedágio tem que ter um serviço rápido, com alta disponibilidade, e isso incluir interação com sistemas externos (Sistemas de pagamento).
+Para ter sucesso no mercado, a companhia de Pedágio precisa oferecer um serviço rápido e altamente disponível, incluindo interação com sistemas externos (Sistemas de pagamento).
 
 O nosso pedágio conta somente com a faixa de transito "sem-parar".
 Não é escopo do projeto fazer funcionalidades para a faixa de pedágio "manual".
