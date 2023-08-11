@@ -21,7 +21,7 @@ Para melhorar a experiência do usuário, pode-se definir como critério de oper
 
 # 2. Escope e Objetivo
 
-O objetivo desse projeto é proporcionar oportunidade à comunidade brasileira aprendizado e aprofundamento no desenvolvimento de aplicações nativas para nuvem, através de apresentação técnicas, ferramentas, processos e discussões diversas.
+O objetivo deste projeto é proporcionar oportunidade à comunidade brasileira aprendizado e aprofundamento no desenvolvimento de aplicações nativas para nuvem, mediante apresentação técnicas, ferramentas, processos e discussões diversas.
 
 Não é escopo desse projeto:
 - desenvolver um produto real de mercado
