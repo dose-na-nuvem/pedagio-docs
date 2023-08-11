@@ -1,0 +1,57 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title "Cobrança automática de Pedágio na Nuvem"
+header "Diagrama detalhado"
+
+Person(car, 'Carro',)
+
+Boundary(b0, "Pedágio") {
+  System(rfid, "Antena", "Sensor RFID")
+  System(catraca, "Catraca", "Controle de passagem")
+  Rel(car, rfid, "aproxima")
+
+  System(central, "Central Pedágio", "Controle de veículos")
+  Rel(rfid, central, "Tag RFID")
+
+  Rel(central, catraca, "libera")
+}
+
+System(internet, "Internet") #Red
+BiRel(central, internet,)
+
+UpdateRelStyle(car, rfid, $textColor="green", $lineColor="green", $offsetY="-40", $offsetX="-60")
+UpdateElementStyle(catraca, $fontColor="green", $bgColor="lightgrey", $borderColor="green")
+UpdateElementStyle(rfid, $fontColor="green", $bgColor="lightgrey", $borderColor="green")
+
+UpdateRelStyle(rfid, central, $textColor="blue", $lineColor="blue", $offsetY="-10", $offsetX="0")
+UpdateRelStyle(central, catraca, $textColor="blue", $lineColor="blue", $offsetY="-10", $offsetX="0")
+
+
+Enterprise_Boundary(nuvem, "Cloud Provider") {
+  Boundary(rede, "Redirect"){
+    System(lb,"Load Balancer","Redirect")
+    System(waf,"WAF","Firewall")
+    BiRel(lb, waf,)
+  }
+
+
+  Boundary(region1, "Região 1") {
+    System(pedagio1, "Pedagio Backend","Processa pedagio")
+    System(db1, "Banco de dados")
+
+    BiRel(lb, pedagio1, "Transação")
+    BiRel(pedagio1, db1, "Persistencia de dados")
+  }
+
+  BiRel(internet, lb, "Transação","gRPC")
+
+  Boundary(region2, "Região 2") {
+    System(pedagio2, "Pedagio Backend","Processa pedagio")
+    System(db2, "Banco de dados")
+
+    BiRel(lb, pedagio2, "Transação")
+    BiRel(pedagio2, db2, "Persistencia de dados")
+  }
+}
+@enduml
