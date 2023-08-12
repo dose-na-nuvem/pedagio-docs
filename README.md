@@ -1,6 +1,6 @@
 # Introdução
 
-Esse repositório buscará registrar decisões importantes na construção do sistema de pedágio, idealizado para concretizar o projeto [Dose na Nuvem](https://dosedetelemetria.com/dose-na-nuvem/).
+Esse repositório buscará registrar decisões importantes na construção do sistema de pedágio, idealizado por [Juraci Paixão](https://www.linkedin.com/in/jpkroehling/) para concretizar o projeto [Dose na Nuvem](https://dosedetelemetria.com/dose-na-nuvem/).
 
 Listaremos aqui algumas técnicas, processos e ferramentas usadas como apoio:
 
