@@ -8,3 +8,7 @@ Resuma o que esse PR faz.
 
 Observações finais ou requisitos adicionais.
 
+
+## Issue Relacionada
+
+- Número da issue relacionada: #[número_da_issue]

@@ -1,0 +1,17 @@
+name: Lint Commit Messages
+on: [pull_request]
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: wagoid/commitlint-github-action@v5
+
+      - name: Check for failures
+        id: commitlint-status
+        run: echo "::set-output name=status::${{ job.status }}"
+      
+      - name: Handle failure
+        if: steps.commitlint-status.outputs.status == 'failure'
+        run: echo "Consute a documentação conventional commits "
