@@ -15,3 +15,5 @@ jobs:
       - name: Handle failure
         if: steps.commitlint-status.outputs.status == 'failure'
         run: echo "Consute a documentação conventional commits "
+
+        
