@@ -1,5 +1,5 @@
 name: Lint Commit Messages
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   commitlint:
@@ -11,9 +11,3 @@ jobs:
       - name: Check for failures
         id: commitlint-status
         run: echo "::set-output name=status::${{ job.status }}"
-      
-      - name: Handle failure
-        if: steps.commitlint-status.outputs.status == 'failure'
-        run: echo "Consute a documentação conventional commits "
-
-        
