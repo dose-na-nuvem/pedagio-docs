@@ -14,7 +14,7 @@ O conventional commits é uma metodologia para auxiliar na estruturar de mensage
 
 
 ```shell
-<type>(<scope>): <assunto>
+<type>[scope]: <assunto>
 
 feat[módulo-front]: adiciona nova rota cadastrar usuário
 ```
