@@ -1,5 +1,7 @@
 # Carro se aproxima e Pedágio decide se libera passagem
 
+Revisão: 2023-09-29
+
 Diagrama
 
 ```mermaid
