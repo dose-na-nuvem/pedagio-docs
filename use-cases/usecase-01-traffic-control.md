@@ -6,9 +6,15 @@ Diagrama
 
 ```mermaid
 sequenceDiagram
-    Simulador->>Pedagio: carro aproxima (tag)
-    Pedagio->>Pedagio: verifica
-    Pedagio->>Simulador: status {catraca:aberta}
+    Faixa->>Pedagio: carro aproxima (tag)
+    Pedagio->>+Clientes: Quem usa essa tag?
+    Clientes-->>Veículos: Localize o carro com essa tag
+    Veículos-->>Clientes: Carro | <vazio>
+    Clientes-->>Clientes : Localiza dono do carro
+    Clientes-->>-Pedagio : Cliente | <vazio>
+    Pedagio->>Faixa: status {catraca:aberta}
+
+
 ```
 
 # Descrição
